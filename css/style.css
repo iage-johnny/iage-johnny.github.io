@@ -1,0 +1,14 @@
+#content {
+	width : 100%;
+	
+	margin-top : 50px;
+}
+
+#content h2, h3 {
+	text-align : center;
+}
+
+#content article {
+	width : 59%;
+	margin : 0px auto;
+}
