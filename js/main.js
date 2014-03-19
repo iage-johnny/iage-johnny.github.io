@@ -10,7 +10,7 @@
 	//scroll setting
 	$(".innerLink").click(function(evt) {
 		evt.preventDefault();
-		var dest = 'section'+this.dataset.dest;
+		var dest = 'section'+this.getAttribute('data-dest');
 		$.scrollTo($(dest)
 			,800
 			,{queue:true,
