@@ -21,7 +21,6 @@
 
 	//gallery setting
 	var galleryContainer = $('.galleryContainer');
-
 	galleryContainer.isotope({
 		filter : '*',
 		animationOptions : {
@@ -29,6 +28,10 @@
 			easing : 'linear',
 			queue : true
 		}
+	});
+
+	galleryContainer.ready(function(){
+		galleryContainer.height(galleryContainer.height()+10);
 	});
 
 	$('.filter a').click(function(){
@@ -44,6 +47,9 @@
 				queue : true
 			}
 		});
+		
+		galleryContainer.height(galleryContainer.height()+10);
+
 		return false;
 	});	
 

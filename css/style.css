@@ -32,12 +32,12 @@
 	text-decoration : none;
 }
 #content section .galleryContainer .portfolio {
-	box-shadow: 5px 5px 10px #888888;
+	box-shadow: 5px 5px 6px #888888;
 }
 #content section .galleryContainer img {
 	width : 200px;
 	height : 150px;
-	margin : 10px;
+	margin : 15px;
 	float : left;
 }
 
