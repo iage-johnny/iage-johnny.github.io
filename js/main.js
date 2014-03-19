@@ -1,6 +1,6 @@
 /* 
  * main javascript file 
- * Author : YU JOHNNY ZHOU (johnny0614@gmail.com)
+ * @author : YU JOHNNY ZHOU (johnny0614@gmail.com)
  */
 
 (function($){
@@ -17,6 +17,34 @@
 			  axis:'y',
 			  offset:{top:-60}
 			});
+	});
+
+	//gallery setting
+	var galleryContainer = $('.galleryContainer');
+
+	galleryContainer.isotope({
+		filter : '*',
+		animationOptions : {
+			duration : 700,
+			easing : 'linear',
+			queue : true
+		}
+	});
+
+	$('.filter a').click(function(){
+		$('.filter .current').removeClass('current');
+		$(this).addClass('current');
+
+		var selector = $(this).attr('data-filter');
+		galleryContainer.isotope({
+			filter : selector,
+			animationOptions : {
+				duration : 700,
+				easing : 'linear',
+				queue : true
+			}
+		});
+		return false;
 	});	
 
 })(jQuery);
