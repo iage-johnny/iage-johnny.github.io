@@ -19,7 +19,7 @@
 			});
 	});
 
-	//gallery setting
+	//gallery setting desktop
 	var galleryContainer = $('.galleryContainer');
 	galleryContainer.isotope({
 		filter : '*',
@@ -30,9 +30,11 @@
 		}
 	});
 
+
 	galleryContainer.ready(function(){
 		galleryContainer.height(galleryContainer.height()+10);
 	});
+
 
 	$('.filter a').click(function(){
 		$('.filter .current').removeClass('current');
@@ -48,9 +50,8 @@
 			}
 		});
 		
-		galleryContainer.height(galleryContainer.height()+10);
-
 		return false;
-	});	
+	});
+	
 
 })(jQuery);
