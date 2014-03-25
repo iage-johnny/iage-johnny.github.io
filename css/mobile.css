@@ -2,4 +2,10 @@
 	display : none;
 }
 
+#content {
+	margin-top : 50px;	
+}
 
+.arrow {
+	float : right;
+}
