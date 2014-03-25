@@ -3,6 +3,7 @@
  * @author : YU JOHNNY ZHOU (johnny0614@gmail.com)
  */
 
+
 (function($){
 	//element cache
 	var root = $('html, body');
@@ -14,12 +15,13 @@
 		$.scrollTo($(dest)
 			,800
 			,{queue:true,
-			  axis:'y',
-			  offset:{top:-60}
+				axis:'y',
+				offset:{top:-60}
 			});
 	});
 
 	//gallery setting desktop
+
 	var galleryContainer = $('.galleryContainer');
 	galleryContainer.isotope({
 		filter : '*',
@@ -49,9 +51,10 @@
 				queue : true
 			}
 		});
-		
+
+
 		return false;
 	});
-	
+
 
 })(jQuery);
