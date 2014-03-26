@@ -8,9 +8,14 @@
 
 
 /* header setting*/
+header {
+	width : 100%;
+}
 header ul.navbar-nav {
 	float : right;
 }
+
+/* content setting */
 
 #content {
 	width : 100%;
@@ -19,12 +24,18 @@ header ul.navbar-nav {
 }
 
 #content h2, h3 {
+
+	font-family : 'Yeseva One', cursive;
 	text-align : center;
 }
 
 #content article {
 	width : 59%;
 	margin : 0px auto;
+}
+
+#content article p {
+	font-family: 'Droid Sans', sans-serif;
 }
 
 /* portfolio */
@@ -44,8 +55,6 @@ header ul.navbar-nav {
 }
 #content section .gallery a {
 	text-decoration : none;
-}
-#content section .galleryContainer .portfolio {
 }
 #content section .galleryContainer img {
 	width : 200px;
@@ -110,4 +119,32 @@ header ul.navbar-nav {
 
 /* End: Recommended Isotope styles */
 
+/* Footer Setting */
+footer {
+	border-top : 4px solid #9EB200;
+	width : 100%;
+}
 
+footer .footer {
+	width : 65%;
+	margin : 10px auto;
+}
+
+footer ul {
+	list-style : none;
+	padding-left : 0px;
+}
+
+footer ul li {
+	display : inline;
+	padding : 0px 5px 0px 5px; 
+	text-align : center;
+}
+
+footer .footer .footer-left {
+	float : left;
+}
+
+footer .footer .footer-right {
+	float : right;
+}
