@@ -7,6 +7,54 @@
 (function($){
 	//element cache
 	var root = $('html, body');
+	
+
+	//home page welcome pic and nav bar setting
+	var welpicheight = $(window).height() - 50;
+	var welpicwidth = $(window).width();
+
+	function set_pic_size() {
+		welpicheight = $(window).height() - 50;
+		welpicwidth = $(window).width();
+
+		if(welpicheight > welpicwidth) {
+			welpicheight = welpicwidth*9/16;
+		}
+
+		
+		$('.welcomepic').attr('style','height:'+welpicheight+'px;width:'+welpicwidth+'px;');
+		$('.welcomepic').css('background-image','url("img/homepagewelcome.jpg")');
+		$('.welcomepic').css('background-size','100% 100%');
+
+		$('#welcomeMessage').height(welpicheight/3);
+		$('#welcomeMessage').width(welpicwidth/2);
+		$('#welcomeMessage').css('position','absolute');
+		$('#welcomeMessage').css('top',welpicheight/3+'px');
+		$('#welcomeMessage').css('left',welpicwidth/4+'px');
+		$('#welcomeMessage').css('background-color','#f05a22');
+		$('#welcomeMessage').css('color','#eeedee');	
+	}
+
+	set_pic_size();
+	
+	$(window).ready(function(){
+		set_pic_size();
+		$(window).bind('scroll',function(){
+			if($(window).scrollTop() > $('.welcomepic').height()) {
+				$('.navbar').addClass('navbar-fixed-top');
+			} else{
+				$('.navbar').removeClass('navbar-fixed-top');
+			}
+		});
+		$(window).bind('resize',function(){
+			set_pic_size();
+		});		
+	});
+
+	//logo setting
+	$('#logo img').height(40).width(218*40/75);
+	$('#logo').css('padding','5px 15px 5px 15px');
+
 
 	//scroll setting
 	$(".innerLink").click(function(evt) {
@@ -16,7 +64,7 @@
 			,800
 			,{queue:true,
 				axis:'y',
-				offset:{top:-60}
+				offset:{top:-50}
 			});
 	});
 
@@ -55,6 +103,5 @@
 
 		return false;
 	});
-
 
 })(jQuery);

@@ -14,3 +14,13 @@
 .arrow {
 	float : right;
 }
+
+/* Footer Setting */
+footer {
+	background-color : rgb(0,0,0);
+	margin-top : 20px;
+	border-top : 4px solid #9EB200;
+	width : 100%;
+	height : auto;
+}
+
