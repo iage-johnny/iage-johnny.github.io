@@ -10,10 +10,22 @@ html, body {
 .ui-loading .ui-loader { display: block; }
 .ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }
 
-
+/* body background setting*/
+body {
+	background-color : #eeedee;
+}
 /* header setting*/
 header {
 	width : 100%;
+}
+header #welcomeMessage h2 {
+	font-size : 3.3vw;
+	font-family : 'Holtwood One SC', serif;
+	line-height : 150%;
+}
+header #welcomeMessage h3 {
+	font-size : 4.9vw;
+	font-family : 'Holtwood One SC', serif;
 }
 header .navbar {
 	margin-bottom : 0px;
@@ -64,6 +76,33 @@ header .carousel-inner {
 	font-family: 'Droid Sans', sans-serif;
 	width : 65%;
 	margin : 0px auto;
+}
+
+/* carousel/our staff setting */
+#ourpeople {
+	width : 100%;
+}
+#ourpeople .carousel {
+	width : 60%;
+	margin : 0px auto;
+}
+#ourpeople .carousel-inner > .item {
+	display : block !important;
+	float : left !important;
+	left : auto !important;
+	position : static !important;
+	float : left !important;
+	width : 33.3% !important;
+	
+}
+#ourpeople .item img {
+	margin : 0px auto;
+}
+#ourpeople  .staffname {
+	text-align : center;
+}
+#ourpeople .jobtitle {
+	text-align : center;
 }
 
 /* portfolio */

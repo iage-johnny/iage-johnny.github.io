@@ -32,7 +32,11 @@
 		$('#welcomeMessage').css('top',welpicheight/3+'px');
 		$('#welcomeMessage').css('left',welpicwidth/4+'px');
 		$('#welcomeMessage').css('background-color','#f05a22');
-		$('#welcomeMessage').css('color','#eeedee');	
+		$('#welcomeMessage').css('color','#eeedee');
+		
+		var msgWidth = $('#welcomeMessage').width()-20;
+		var msgHeight = $('#welcomeMessage').height;
+
 	}
 
 	set_pic_size();
@@ -54,6 +58,8 @@
 	//logo setting
 	$('#logo img').height(40).width(218*40/75);
 	$('#logo').css('padding','5px 15px 5px 15px');
+
+	
 
 
 	//scroll setting
