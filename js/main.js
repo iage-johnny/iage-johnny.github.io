@@ -46,8 +46,10 @@
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
 				$('.navbar').addClass('navbar-fixed-top');
+				$('#content').css('margin-top','50px');
 			} else{
 				$('.navbar').removeClass('navbar-fixed-top');
+				$('#content').css('margin-top','0px');
 			}
 		});
 		$(window).bind('resize',function(){
@@ -61,16 +63,21 @@
 
 	
 
-
 	//scroll setting
 	$(".innerLink").click(function(evt) {
 		evt.preventDefault();
 		var dest = 'section'+this.getAttribute('data-dest');
+		var offset = -50;
+		if($('#navbar').hasClass('navbar-fixed-top')) {
+			offset = 0;
+		} else {
+			offset = -50;
+		}
 		$.scrollTo($(dest)
 			,800
 			,{queue:true,
 				axis:'y',
-				offset:{top:-50}
+				offset:{top:offset}
 			});
 	});
 
