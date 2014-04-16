@@ -49,7 +49,7 @@
 	$("a.arrow").on('tap',function(){
 		var arrow = $(this);
 		arrow.arrowUpAndDown()
-		.parent().siblings('p').slideToggle();
+		.parent().parent().siblings('p').slideToggle();
 	});
 
 })(jQuery);

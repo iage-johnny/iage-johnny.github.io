@@ -6,9 +6,24 @@
 .ui-loading .ui-loader { display: block; }
 .ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }
 
-
+/* Header Setting*/
+header #navbar {
+	margin-bottom : 0px;
+}
+/* Content Setting*/
 #content {
-	margin-top : 50px;	
+	margin-top : 50px;
+	padding : 0px 0px 0px 0px;	
+}
+
+#ourpeople .item {
+	margin : 0px auto;
+}
+#ourpeople .item h4 {
+	text-align : center;
+}
+#ourpeople .item p {
+	text-align : center;
 }
 
 .arrow {
