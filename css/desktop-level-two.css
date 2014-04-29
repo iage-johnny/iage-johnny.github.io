@@ -1,0 +1,230 @@
+.mobile {
+	display : none;
+}
+
+html, body {
+	height : 100%;
+}
+
+/* jquery mobile css fix */
+.ui-loading .ui-loader { display: block; }
+.ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }
+
+/* body background setting*/
+body {
+	background-color : #eeedee;
+}
+/* header setting*/
+header {
+	width : 100%;
+}
+header .navbar {
+	margin-bottom : 0px;
+	border : 0px;
+	border-radius : 0px;
+	background-color : #333;
+}
+header .navbar-inverse {
+	background : rgb(0,0,0);
+}
+header .navbar-fixed-top {
+	margin-bottom : 0px;
+	border : 0px;
+	border-radius : 0px;
+}
+header .navbar .navbar-collapse {
+	padding : 0px 15px 0px 15px;
+}
+header #top-menu {
+	width : 80%;
+	min-width : 650px;
+}
+header ul.navbar-nav {
+	float : right;
+}
+header .description {
+	padding-top : 50px;
+}
+header .description h2 {
+	text-align : center;
+	margin-top : 0px;
+}
+header .description h3 {
+	text-align : center;
+	margin-top : 0px;
+}
+header .description p {
+	width : 50%;
+	margin : 0px auto;
+}
+header .description span {
+	display : block;
+	width : 25%; /* need future adjust */
+	margin : 0px auto;
+}
+
+/* content setting */
+
+#content {
+	width : 50%;
+	margin : 0px auto;
+	padding : 0px;
+}
+#content section h2 {
+	text-align : center;
+	line-height : 150%;
+	border-bottom : 2px solid;
+}
+#content section .subsection {
+	margin-bottom : 40px;
+}
+#content section .subsection h3 {
+	text-align : center;
+}
+#content section .subsection a {
+	display : inline-block;
+	width : 100%;
+	text-align : center;
+	margin : 0px auto;
+}
+
+/* carousel/our staff setting */
+#ourpeople {
+	width : 100%;
+}
+#ourpeople .carousel {
+	width : 60%;
+	margin : 0px auto;
+}
+#ourpeople .carousel-inner > .item {
+	display : block !important;
+	float : left !important;
+	left : auto !important;
+	position : static !important;
+	float : left !important;
+	width : 33.3% !important;
+	
+}
+#ourpeople .item img {
+	margin : 0px auto;
+}
+#ourpeople  .staffname {
+	text-align : center;
+}
+#ourpeople .jobtitle {
+	text-align : center;
+}
+
+/* portfolio */
+#content section .gallery {
+	width : 65%;
+}
+#content section .gallery nav {
+	width : 100%;
+}
+#content section .gallery ul {
+	list-style : none;
+	padding-left : 0px;
+}
+#content section .gallery ul li {
+	display : inline;
+	text-align : center;
+}
+#content section .gallery a {
+	text-decoration : none;
+}
+#content section .galleryContainer img {
+	width : 200px;
+	height : 150px;
+	margin : 15px;
+	float : left;
+	box-shadow: 5px 5px 6px #888888;
+
+}
+
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+/* Footer Setting */
+footer {
+	background-color : rgb(0,0,0);
+	border-top : 4px solid #9EB200;
+	width : 100%;
+	height : auto;
+}
+
+footer .footer {
+	width : 75%;
+	margin : 10px auto 0px auto;
+}
+
+footer ul {
+	list-style : none;
+	padding-left : 0px;
+}
+
+footer ul li {
+	display : inline;
+	padding : 0px 5px 0px 5px; 
+	text-align : center;
+	color : rgb(255,255,255);
+}
+
+footer .footer .footer-left {
+	float : left;
+}
+
+footer .footer .footer-right {
+	float : right;
+}

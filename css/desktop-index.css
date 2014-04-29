@@ -33,6 +33,9 @@ header .navbar {
 	border-radius : 0px;
 	background-color : #333;
 }
+header .navbar-inverse {
+	background : rgb(0,0,0);
+}
 header .navbar-fixed-top {
 	margin-bottom : 0px;
 	border : 0px;
@@ -41,8 +44,9 @@ header .navbar-fixed-top {
 header .navbar .navbar-collapse {
 	padding : 0px 15px 0px 15px;
 }
-header .top-menu {
-	width : 70%;
+header #top-menu {
+	width : 80%;
+	min-width : 650px;
 }
 header ul.navbar-nav {
 	float : right;
@@ -62,7 +66,12 @@ header .carousel-inner {
 #content section {
 	min-height : 8cm;
 }
-#content h2, h3 {
+#content h2 {
+
+	font-family : 'Yeseva One', cursive;
+	text-align : center;
+}
+#content h3 {
 
 	font-family : 'Yeseva One', cursive;
 	text-align : center;
