@@ -42,21 +42,7 @@ header #top-menu {
 header ul.navbar-nav {
 	float : right;
 }
-header .description {
-	padding-top : 50px;
-}
-header .description h2 {
-	text-align : center;
-	margin-top : 0px;
-}
-header .description h3 {
-	text-align : center;
-	margin-top : 0px;
-}
-header .description p {
-	width : 50%;
-	margin : 0px auto;
-}
+
 
 /* content setting */
 
@@ -65,25 +51,15 @@ header .description p {
 	margin : 0px auto;
 	padding : 0px;
 }
-#content section h2 {
-	text-align : center;
-	line-height : 150%;
-	border-bottom : 2px solid;
-}
-#content section .subsection {
-	margin-bottom : 40px;
-}
-#content section .subsection h3 {
+#content section article h2 {
 	text-align : center;
 }
-#content section .subsection a {
-	display : inline-block;
-	width : 100%;
+#content section article h3 {
 	text-align : center;
-	margin : 0px auto;
 }
-
-
+#content section p {
+	text-align : center;
+}
 /* Start: Recommended Isotope styles */
 
 /**** Isotope Filtering ****/

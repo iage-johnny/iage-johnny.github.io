@@ -18,14 +18,8 @@ body {
 header {
 	width : 100%;
 }
-header #welcomeMessage h2 {
-	font-size : 3.3vw;
-	font-family : 'Holtwood One SC', serif;
-	line-height : 150%;
-}
-header #welcomeMessage h3 {
-	font-size : 4.9vw;
-	font-family : 'Holtwood One SC', serif;
+header #welcomeMessage {
+	display : inline-block;
 }
 header .navbar {
 	margin-bottom : 0px;

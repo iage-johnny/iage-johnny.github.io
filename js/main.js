@@ -25,17 +25,18 @@
 		$('.welcomepic').attr('style','height:'+welpicheight+'px;width:'+welpicwidth+'px;');
 		$('.welcomepic').css('background-image','url("img/homepagewelcome.jpg")');
 		$('.welcomepic').css('background-size','100% 100%');
+		
 
+		var width_img_d = 992;
+		var height_img_d = 352;
+		var left_move = ( welpicwidth - width_img_d ) / 2;
+		var top_move = (welpicheight - height_img_d)/2
 		$('#welcomeMessage').height(welpicheight/3);
 		$('#welcomeMessage').width(welpicwidth/2);
 		$('#welcomeMessage').css('position','absolute');
-		$('#welcomeMessage').css('top',welpicheight/3+'px');
-		$('#welcomeMessage').css('left',welpicwidth/4+'px');
-		$('#welcomeMessage').css('background-color','#f05a22');
-		$('#welcomeMessage').css('color','#eeedee');
-		
-		var msgWidth = $('#welcomeMessage').width()-20;
-		var msgHeight = $('#welcomeMessage').height;
+		$('#welcomeMessage').css('top',top_move+'px');
+		$('#welcomeMessage').css('left',left_move+'px');
+				
 
 	}
 

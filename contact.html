@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+		<title>Contact Us</title>
+
+		<!-- Bootstrap -->
+		<link href="css/bootstrap-theme.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Fonts Setting -->
+		<link href="css/fonts.css" rel="stylesheet">
+
+		<!-- Style Setting -->
+		<link href="css/desktop-contact.css" rel="stylesheet" media="only screen and (min-width : 769px)">
+		<link href="css/mobile.css" rel="stylesheet" media="only screen and (max-width : 768px)">
+
+
+	</head>
+	<body>
+		<header>
+		<div id="navbar" class="navbar navbar-default navbar-inverse" role="navigation header" >
+			<div id="top-menu" class="container top-menu">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+						<span class="sr-only"></span> 
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" id="logo" onclick="location.reload();"><img src="img/iagemedialog.png" /></a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a data-dest="#test1" class="innerLink">Who We Are</a></li>
+						<li><a data-dest="#test2" class="innerLink">iAge Media</a></li>
+						<li><a data-dest="#test3" class="innerLink">iAge Creative</a></li>
+						<li><a data-dest="#test6" class="innerLink">Portfolio</a></li>
+						<li><a data-dest="#test4" class="innerLink">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="map-canvas" style="height:540px;"></div>
+		<header>
+		<div id="content" class="container">
+			<section>
+				<article>
+				<h2 style="font-size:58px;font-weight:400;color:#231f20;margin-bottom:20px;">Talk To Us</h2>
+				<h3 style="font-size:45px;font-weight:400;color:#231f20;margin: 0.5em 0px 0px;">ADELAIDE</h3>
+				<p style="font-size:17px;font-weight:300;color:#404041;">242 - 244 Franklin Street</p>
+				<p style="font-size:17px;font-weight:300;color:#404041;">Adelaide SA 5000, Australia</p>
+				<p>Phone : 08 8212 1008</p>
+				<p>Fax : 08 8212 9008</p>
+				<br>
+				<p>General Enquires : <a href="mailto:info@iage.com.au">info@iage.com.au</a></p>
+				<p>Sales Enquires : <a href="mailto:sales@iage.com.au">sales@iage.com.au</a></p>
+				</article>
+			</section>
+		</div>
+		<footer>
+		<p style="text-align:center;line-height:3;color:white;margin-bottom:0px;"><span>@ i Age Media. All Rights Reserved</span></p>
+		</footer>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<script src="js/jquery.mobile-1.4.2.js" type="text/javascript"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
+		<script src="js/jquery.localScroll.min.js" type="text/javascript"></script>
+		<script src="js/jquery.isotope.min.js" type="text/javascript"></script>
+		<script type="text/javascript"
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFt8vEyEiodcBRel2SaeoqZunZ8U0iYjk&sensor=true">
+		</script>
+
+		<script src="js/main.js" type="text/javascript"></script>
+		<script src="js/mobile.js" type="text/javascript"></script>
+		<script type="text/javascript">
+
+			function initialize() {
+				
+				var latlng = new google.maps.LatLng(-34.397, 150.644);
+				var mapOptions = {
+						center: latlng,
+						zoom: 11,
+						styles: [{	
+							featureType:"all",		
+							elementType:"all",		
+							stylers:[{			
+									invert_lightness:true
+							},		
+							{			
+									saturation:10		
+							},		
+							{			
+									lightness:30
+							},
+							{
+									gamma:0.5
+							},
+							{
+									hue:"#1C705B"
+							}]
+						}]
+					};
+					var map = new google.maps.Map(document.getElementById("map-canvas"),
+							mapOptions);
+					var marker = new google.maps.Marker({
+							position : latlng,
+							map : map,
+							title : 'iAge'
+							});
+				}
+
+				google.maps.event.addDomListener(window, 'load', initialize);
+
+		</script>
+
+	</body>
+</html>
