@@ -4,6 +4,15 @@
  */
 
 (function($){
+	
+	var navpanel = $('#nav-panel');
+	if(navpanel.hasClass('in')) {
+		navpanel.children('a').bind('click', function(e) {
+			navpanel.slideUp();
+		});
+	}
+
+	
 
 	$.fn.animateRotate = function(angle,duration) {
 		return this.each(function(){
@@ -46,10 +55,11 @@
 		});
 	};
 
-	$("a.arrow").on('tap',function(){
+	$("a.arrow").on('click',function(){
 		var arrow = $(this);
 		arrow.arrowUpAndDown()
-		.parent().siblings('p').slideToggle();
+		.parent().parent().siblings('p').slideToggle();
 	});
+	
 
 })(jQuery);

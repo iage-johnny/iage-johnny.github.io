@@ -14,9 +14,10 @@
 		<link href='http://fonts.googleapis.com/css?family=Yeseva+One' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+		<link href="css/fonts.css" rel="stylesheet" type="text/css">
 
-		<link href="css/desktop.css" rel="stylesheet" media="only screen and (min-width : 769px)">
-		<link href="css/mobile.css" rel="stylesheet" media="only screen and (max-width : 768px)">
+		<link href="css/desktop-index.css" rel="stylesheet" media="only screen and (min-width : 769px)">
+		<link href="css/mobile-index.css" rel="stylesheet" media="only screen and (max-width : 768px)">
 
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -29,15 +30,18 @@
 	</head>
 	<body>
 
-		<header id="header">
+		<header id="header" style="overflow:hidden;">
 			<div class="welcomepic">
-				<div id="welcomeMessage">
-					<h2 style="text-align:center;margin-bottom:0px;">HELLO AND WELCOME</h2>
-					<h3 style="text-align:center;margin-top:0px;">TO iAGE MEDIA</h3>
-				</div>
+				<!--<div id="welcomeMessage">-->
+					<!--<h2 style="text-align:center;margin-bottom:0px;">HELLO AND WELCOME</h2>-->
+					<!--<h3 style="text-align:center;margin-top:0px;">TO iAGE MEDIA</h3>-->
+					<div class="container" id="welcomeMessage">
+						<img src="img/welcome_l.png" class="img-responsive" alt="Responsive image" style="margin:0px auto;">
+					</div>
+				<!--</div>-->
 			</div> 
-			<div class="navbar navbar-default navbar-inverse" role="navigation header" >
-				<div class="container top-menu">
+			<div id="navbar" class="navbar navbar-default navbar-inverse" role="navigation header" >
+				<div id="top-menu" class="container top-menu" >
 					<div class="navbar-header">
 						<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
 							<span class="sr-only"></span>
@@ -45,27 +49,37 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a class="navbar-brand" id="logo" onclick="location.reload();"><img src="img/iagemedialog.png" /></a>
+						<a class="navbar-brand" id="logo" href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/"><img src="img/iagemedialog.png" /></a>
 					</div>
-					<div class="navbar-collapse collapse">
-						<ul class="nav navbar-nav">
-							<li><a data-dest="#test1" class="innerLink">Who We Are</a></li>
-							<li><a data-dest="#test2" class="innerLink">iAge Media</a></li>
-							<li><a data-dest="#test3" class="innerLink">iAge Creative</a></li>
-							<li><a data-dest="#test6" class="innerLink">Portfolio</a></li>
-							<li><a data-dest="#test4" class="innerLink">Contact Us</a></li>
+					<div id="nav-panel" class="navbar-collapse collapse"">
+						
+						<ul class="nav navbar-nav mobile">
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/" >Who We Are</a></li>
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/iagemedia.html">iAge Media</a></li>
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/iagecreative.html">iAge Creative</a></li>
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/portfolio.html">Portfolio</a></li>
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/contact.html">Contact Us</a></li>
+						</ul>
+						<ul class="nav navbar-nav desktop">
+							<li><a class="innerLink" data-dest="#test1">Who We Are</a></li>
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/iagemedia.html">iAge Media</a></li>
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/iagecreative.html">iAge Creative</a></li>
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/portfolio.html">Portfolio</a></li>
+							<li><a href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/contact.html">Contact Us</a></li>
 						</ul>
 					</div>
+					
 				</div>
 			</div>
 		</header>
 		<div class="container" id="content">
 			<section id="test1">
 				<article>
-					<div style="background-color:#a7a9ab;padding:10px 0px 10px 0px;color:#231f20;">
-						<h2>HELLO AND WELCOME<a class="mobile arrow"><span class="glyphicon glyphicon-chevron-down"></span></a></h2>
+					<div class="title" style="background-color:#a7a9ab;padding:10px 0px 10px 0px;color:#231f20;">
+						<h2>HELLO AND WELCOME</h2>
+						<h3>&nbsp;<a class="mobile arrow"><span class="glyphicon glyphicon-chevron-down"></span></a></h3>
 					</div>
-					<p class="desktop"><br><br>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
+					<p class="desktop para"><br><br>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.</p>
@@ -73,11 +87,11 @@
 			</section>
 			<section id="test2">
 				<article>
-					<div style="background-color:#f05a22;padding:10px 0px 10px 0px;color:#231f20">
-						<h2>iAGE MEDIA<a class="mobile arrow"><span class="glyphicon glyphicon-chevron-down"></span></a></h2>
-						<h3>Where did you sleep last night ... ...</h3>
+					<div class="title" style="background-color:#f05a22;padding:10px 0px 10px 0px;color:#231f20">
+						<h2>iAGE MEDIA</h2>
+						<h3>Where did you sleep last night ... ...<a class="mobile arrow"><span class="glyphicon glyphicon-chevron-down"></span></a></h3>
 					</div>
-					<p class="desktop"><br><br>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
+					<p class="desktop para"><br><br>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.</p>
@@ -85,11 +99,11 @@
 			</section>
 			<section id="test3">
 				<article>
-					<div style="background-color:#45b649;padding:10px 0px 10px 0px;color:#231f20">
-						<h2>iAGE CREATIVE<a class="mobile arrow"><span class="glyphicon glyphicon-chevron-down"></span></a></h2>
-						<h3>November Rain ... ...</h3>
+					<div class="title" style="background-color:#45b649;padding:10px 0px 10px 0px;color:#231f20">
+						<h2>iAGE CREATIVE</h2>
+						<h3>November Rain ... ...<a class="mobile arrow"><span class="glyphicon glyphicon-chevron-down"></span></a></h3>
 					</div>
-					<p class="desktop"><br><br>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
+					<p class="desktop para"><br><br>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.</p>
@@ -97,11 +111,11 @@
 			</section>
 			<section id="test4">
 				<article>
-					<div style="background-color:#f9ca3c;padding:10px 0px 10px 0px;">
-						<h2>OUR PEOPLE<a class="mobile arrow"><span class="glyphicon glyphicon-chevron-down"></span></a></h2>
-						<h3>Knockin' On Heaven's Door ... ...</h3>
+					<div class="title" style="background-color:#f9ca3c;padding:10px 0px 10px 0px;">
+						<h2>OUR PEOPLE</h2>
+						<h3>Knockin' On Heaven's Door ... ...<a class="mobile arrow"><span class="glyphicon glyphicon-chevron-down"></span></a></h3>
 					</div>
-					<p class="desktop"><br><br>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
+					<p class="desktop para"><br><br>Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.Lorem ipsum dolor sit amet, mutat graeco volumus ad eam, singulis patrioque comprehensam nam no. 
 						Mei cu dicat voluptaria volumus.</p>
@@ -110,7 +124,7 @@
 			<section id="ourpeople">
 				<div class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
-  					<ol class="carousel-indicators">
+  					<ol class="carousel-indicators mobile">
    						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     						<li data-target="#carousel-example-generic" data-slide-to="1"></li>
     						<li data-target="#carousel-example-generic" data-slide-to="2"></li>
@@ -157,7 +171,7 @@
 								<img src="img/person.png" alt="Staff Name"></img>
 							</div>
 							<h4 class="staffname">Staff Name</h4>
-							<span class="jobtitle">Job Title</span>
+							<p class="jobtitle"><span>Job Title</span></p>
 						</div>
 					</div>
 					
@@ -165,12 +179,12 @@
 			</section>
 		</div>
 		<footer>
-			<span>@ i Age Media. All Rights Reserved</span>
+			<p style="text-align:center;line-height:3;color:white;margin-bottom:0px;"><span>@ i Age Media. All Rights Reserved</span></p>
 		</footer>
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
-		<script src="js/jquery.mobile-1.4.2.js" type="text/javascript"></script>
+		<!--<script src="js/jquery.mobile-1.4.2.js" type="text/javascript"></script>-->
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>

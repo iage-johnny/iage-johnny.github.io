@@ -25,17 +25,27 @@
 		$('.welcomepic').attr('style','height:'+welpicheight+'px;width:'+welpicwidth+'px;');
 		$('.welcomepic').css('background-image','url("img/homepagewelcome.jpg")');
 		$('.welcomepic').css('background-size','100% 100%');
+		
+		/*
+		var width_img_d = 992;
+		var height_img_d = 352;
+		*/
+		
+		//var width_img_d = $('#welcomeMessage .img-responsive').width();
+		var height_img_d = $('.welcomepic .img-responsive').height();		
 
+		//var left_move = ( welpicwidth - width_img_d ) / 2;
+		var top_move = (welpicheight - height_img_d)/2
+		/*
 		$('#welcomeMessage').height(welpicheight/3);
 		$('#welcomeMessage').width(welpicwidth/2);
+		*/
+		/*
 		$('#welcomeMessage').css('position','absolute');
-		$('#welcomeMessage').css('top',welpicheight/3+'px');
-		$('#welcomeMessage').css('left',welpicwidth/4+'px');
-		$('#welcomeMessage').css('background-color','#f05a22');
-		$('#welcomeMessage').css('color','#eeedee');
+		$('#welcomeMessage').css('top',top_move+'px');
+		*/
 		
-		var msgWidth = $('#welcomeMessage').width()-20;
-		var msgHeight = $('#welcomeMessage').height;
+		$('.welcomepic .container').css('padding-top',top_move);			
 
 	}
 
@@ -46,8 +56,10 @@
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
 				$('.navbar').addClass('navbar-fixed-top');
+				$('#content').css('margin-top','50px');
 			} else{
 				$('.navbar').removeClass('navbar-fixed-top');
+				$('#content').css('margin-top','0px');
 			}
 		});
 		$(window).bind('resize',function(){
@@ -60,12 +72,17 @@
 	$('#logo').css('padding','5px 15px 5px 15px');
 
 	
-
-
+	
 	//scroll setting
 	$(".innerLink").click(function(evt) {
 		evt.preventDefault();
 		var dest = 'section'+this.getAttribute('data-dest');
+		var offset = -50;
+		if($('#navbar').hasClass('navbar-fixed-top')) {
+			offset = -50;
+		} else {
+			offset = 0;
+		}
 		$.scrollTo($(dest)
 			,800
 			,{queue:true,
@@ -73,6 +90,7 @@
 				offset:{top:-50}
 			});
 	});
+	
 
 	//gallery setting desktop
 
