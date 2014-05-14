@@ -36,8 +36,9 @@ header .navbar .navbar-collapse {
 	padding : 0px 15px 0px 15px;
 }
 header #top-menu {
-	width : 80%;
-	min-width : 650px;
+	width:50%;
+	padding:0px;
+	min-width : 700px;
 }
 header ul.navbar-nav {
 	float : right;

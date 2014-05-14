@@ -19,7 +19,8 @@ header {
 	width : 100%;
 }
 header #welcomeMessage {
-	display : inline-block;
+	width : 50%;
+	padding : 0px;
 }
 header .navbar {
 	margin-bottom : 0px;
@@ -39,8 +40,9 @@ header .navbar .navbar-collapse {
 	padding : 0px 15px 0px 15px;
 }
 header #top-menu {
-	width : 80%;
-	min-width : 650px;
+	width:50%;
+	padding:0px;
+	min-width : 700px;
 }
 header ul.navbar-nav {
 	float : right;
@@ -53,21 +55,30 @@ header .carousel-inner {
 /* content setting */
 
 #content {
+	display : block;
 	width : 100%;
-	height : 100%;
+	height : auto;
 	padding : 0px;
 }
 #content section {
 	min-height : 8cm;
 }
+#content .title {
+	width : 100%;
+	min-height : 164px;
+}
+#content .para {
+	min-height : 328px;
+}
 #content h2 {
 
-	font-family : 'Yeseva One', cursive;
+	font-family : 'Arialbd', cursive;
 	text-align : center;
+	font-size : 60pt;
 }
 #content h3 {
 
-	font-family : 'Yeseva One', cursive;
+	font-family : 'Arialbd', cursive;
 	text-align : center;
 }
 
@@ -78,7 +89,9 @@ header .carousel-inner {
 #content article p {
 	font-family: 'Droid Sans', sans-serif;
 	width : 50%;
+	min-width : 700px;
 	margin : 0px auto;
+	margin-bottom : 40px;
 }
 
 /* carousel/our staff setting */

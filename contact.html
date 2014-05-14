@@ -30,25 +30,29 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" id="logo" onclick="location.reload();"><img src="img/iagemedialog.png" /></a>
+					<a class="navbar-brand" id="logo" href="http://192.168.15.112/~yujohnnyzhou/iage-johnny.github.io/"><img src="img/iagemedialog.png" /></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<ul class="nav navbar-nav">
-						<li><a data-dest="#test1" class="innerLink">Who We Are</a></li>
-						<li><a data-dest="#test2" class="innerLink">iAge Media</a></li>
-						<li><a data-dest="#test3" class="innerLink">iAge Creative</a></li>
-						<li><a data-dest="#test6" class="innerLink">Portfolio</a></li>
-						<li><a data-dest="#test4" class="innerLink">Contact Us</a></li>
+						<li><a href="http://iage-johnny.github.io/">Who We Are</a></li>
+							<li><a href="http://iage-johnny.github.io/iagemedia.html">iAge Media</a></li>
+							<li><a href="http://iage-johnny.github.io/iagecreative.html">iAge Creative</a></li>
+							<li><a href="http://iage-johnny.github.io/portfolio.html">Portfolio</a></li>
+							<li><a href="http://iage-johnny.github.io/contact.html">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 		<div id="map-canvas" style="height:540px;"></div>
-		<header>
+		<div style="position:absolute;display:block;top:467px;width:100%;" id="address">
+				<div style="margin:0px auto;width:360px;background-color:#fa5022;z-index:2;text-align:center;padding-top:20px;"><h2 style="margin:0px;">Adelaide</h2><br><p>242 - 244 Franklin St, SA 5000 Australia</p><br></div>		
+		</div>
+
+		</header>
 		<div id="content" class="container">
 			<section>
 				<article>
-				<h2 style="font-size:58px;font-weight:400;color:#231f20;margin-bottom:20px;">Talk To Us</h2>
+				<h2 style="font-size:58px;font-weight:400;color:#231f20;font-family:'Arialbd' cursive;margin-bottom:20px;"><b>Talk To Us</b></h2>
 				<h3 style="font-size:45px;font-weight:400;color:#231f20;margin: 0.5em 0px 0px;">ADELAIDE</h3>
 				<p style="font-size:17px;font-weight:300;color:#404041;">242 - 244 Franklin Street</p>
 				<p style="font-size:17px;font-weight:300;color:#404041;">Adelaide SA 5000, Australia</p>
@@ -56,16 +60,15 @@
 				<p>Fax : 08 8212 9008</p>
 				<br>
 				<p>General Enquires : <a href="mailto:info@iage.com.au">info@iage.com.au</a></p>
-				<p>Sales Enquires : <a href="mailto:sales@iage.com.au">sales@iage.com.au</a></p>
+				<p>Sales Enquires : <a href="mailto:sales@iage.com.au">advert@iage.com.au</a></p>
 				</article>
 			</section>
 		</div>
-		<footer>
+		<footer style="border-top : 4px solid #45b649;">
 		<p style="text-align:center;line-height:3;color:white;margin-bottom:0px;"><span>@ i Age Media. All Rights Reserved</span></p>
 		</footer>
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
-		<script src="js/jquery.mobile-1.4.2.js" type="text/javascript"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js" type="text/javascript"></script>
 		<script src="js/jquery.scrollTo.min.js" type="text/javascript"></script>
@@ -81,11 +84,13 @@
 
 			function initialize() {
 				
-				var latlng = new google.maps.LatLng(-34.397, 150.644);
+				var latlng = new google.maps.LatLng(-34.927443, 138.589953);
 				var mapOptions = {
 						center: latlng,
 						zoom: 11,
-						styles: [{	
+						styles:	[ { "featureType": "water", "elementType": "geometry.fill", "stylers": [ { "color": "#8dade7" }, { "saturation": -30 }, { "lightness": 13 } ] },{ "featureType": "road", "stylers": [ { "saturation": -100 } ] },{ "featureType": "poi", "stylers": [ { "saturation": -100 } ] }]
+
+						 /*[{	
 							featureType:"all",		
 							elementType:"all",		
 							stylers:[{			
@@ -103,7 +108,7 @@
 							{
 									hue:"#1C705B"
 							}]
-						}]
+						}]*/
 					};
 					var map = new google.maps.Map(document.getElementById("map-canvas"),
 							mapOptions);
@@ -115,6 +120,19 @@
 				}
 
 				google.maps.event.addDomListener(window, 'load', initialize);
+
+				(function($){
+					$(window).ready(function(){
+						$(window).bind('scroll',function(){
+							if($('.navbar').hasClass('navbar-fixed-top')) {
+								$('#address').css('top','417px');
+							} else{
+								$('#address').css('top','467px');
+							}
+						});
+				
+					});
+				})(jQuery);
 
 		</script>
 

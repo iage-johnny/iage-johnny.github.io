@@ -26,17 +26,26 @@
 		$('.welcomepic').css('background-image','url("img/homepagewelcome.jpg")');
 		$('.welcomepic').css('background-size','100% 100%');
 		
-
+		/*
 		var width_img_d = 992;
 		var height_img_d = 352;
-		var left_move = ( welpicwidth - width_img_d ) / 2;
+		*/
+		
+		//var width_img_d = $('#welcomeMessage .img-responsive').width();
+		var height_img_d = $('.welcomepic .img-responsive').height();		
+
+		//var left_move = ( welpicwidth - width_img_d ) / 2;
 		var top_move = (welpicheight - height_img_d)/2
+		/*
 		$('#welcomeMessage').height(welpicheight/3);
 		$('#welcomeMessage').width(welpicwidth/2);
+		*/
+		/*
 		$('#welcomeMessage').css('position','absolute');
 		$('#welcomeMessage').css('top',top_move+'px');
-		$('#welcomeMessage').css('left',left_move+'px');
-				
+		*/
+		
+		$('.welcomepic .container').css('padding-top',top_move);			
 
 	}
 
@@ -63,24 +72,25 @@
 	$('#logo').css('padding','5px 15px 5px 15px');
 
 	
-
+	
 	//scroll setting
 	$(".innerLink").click(function(evt) {
 		evt.preventDefault();
 		var dest = 'section'+this.getAttribute('data-dest');
 		var offset = -50;
 		if($('#navbar').hasClass('navbar-fixed-top')) {
-			offset = 0;
-		} else {
 			offset = -50;
+		} else {
+			offset = 0;
 		}
 		$.scrollTo($(dest)
 			,800
 			,{queue:true,
 				axis:'y',
-				offset:{top:offset}
+				offset:{top:-50}
 			});
 	});
+	
 
 	//gallery setting desktop
 
