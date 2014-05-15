@@ -74,7 +74,7 @@ header .carousel-inner {
 
 	font-family : 'HELVETICANEUELTPRO-BDCN';
 	text-align : center;
-	font-size : 60pt;
+	font-size : 116px;
 }
 #content h3 {
 
@@ -87,7 +87,8 @@ header .carousel-inner {
 }
 
 #content article p {
-	font-family: 'Droid Sans', sans-serif;
+	font-family: Arial;
+	font-size : 36px;
 	width : 50%;
 	min-width : 700px;
 	margin : 0px auto;
