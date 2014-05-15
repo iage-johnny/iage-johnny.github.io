@@ -6,3 +6,7 @@
 	font-family: Arialbd;
 	src: url(../fonts/ARIALBD.TTF);
 }
+@font-face {
+	font-family: HELVETICANEUELTPRO-BDCN;
+	src: url(../fonts/HELVETICANEUELTPRO-BDCN.OTF);
+}
