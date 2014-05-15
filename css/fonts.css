@@ -7,6 +7,7 @@
 	src: url(../fonts/ARIALBD.TTF);
 }
 @font-face {
-	font-family: HELVETICANEUELTPRO-BDCN;
-	src: url(../fonts/HELVETICANEUELTPRO-BDCN.OTF);
+	font-family: HELVETICANEUELTPRO-BDCN; 
+	src: url(../fonts/HELVETICANEUELTPRO-BDCN.OTF) format('OTF'),
+	     url(../fonts/HELVETICANEUELTPRO-BDCN.woff) format('woff');
 }
