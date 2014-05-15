@@ -23,7 +23,7 @@
 
 		
 		$('.welcomepic').attr('style','height:'+welpicheight+'px;width:'+welpicwidth+'px;');
-		$('.welcomepic').css('background-image','url("img/homepagewelcome.jpg")');
+		$('.welcomepic').css('background-image','url("img/homepagewelcomenew.jpg")');
 		$('.welcomepic').css('background-size','100% 100%');
 		
 		/*
