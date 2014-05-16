@@ -27,6 +27,18 @@ header .navbar {
 header .navbar-inverse {
 	background : rgb(0,0,0);
 }
+header #nav-panel {
+	padding-right : 0px;
+}
+header .nav-brand,
+header .navbar-nav li a {
+	height : 64px;
+	line-height : 64px;
+	font-family : 'HELVETICANEUELTPRO-BDCN';
+}
+header .navbar-nav li.last a {
+	padding-right : 0px;
+}
 header .navbar-fixed-top {
 	margin-bottom : 0px;
 	border : 0px;
