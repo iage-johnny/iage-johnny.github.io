@@ -10,11 +10,15 @@
 	
 
 	//home page welcome pic and nav bar setting
-	var welpicheight = $(window).height() - 50;
+	var navbar_height = $('.navbar').height();
+	
+	var welpicheight = $(window).height() - 64;
 	var welpicwidth = $(window).width();
 
+	console.log(navbar_height);
+
 	function set_pic_size() {
-		welpicheight = $(window).height() - 50;
+		welpicheight = $(window).height() - 64;
 		welpicwidth = $(window).width();
 
 		if(welpicheight > welpicwidth) {
@@ -56,7 +60,7 @@
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
 				$('.navbar').addClass('navbar-fixed-top');
-				$('#content').css('margin-top','50px');
+				$('#content').css('margin-top','64px');
 			} else{
 				$('.navbar').removeClass('navbar-fixed-top');
 				$('#content').css('margin-top','0px');
@@ -77,17 +81,20 @@
 	$(".innerLink").click(function(evt) {
 		evt.preventDefault();
 		var dest = 'section'+this.getAttribute('data-dest');
-		var offset = -50;
+		var offset = 0 - $('.navbar').height();
+		console.log(offset);
+		/*
 		if($('#navbar').hasClass('navbar-fixed-top')) {
 			offset = -50;
 		} else {
 			offset = 0;
 		}
+		*/
 		$.scrollTo($(dest)
 			,800
 			,{queue:true,
 				axis:'y',
-				offset:{top:-50}
+				offset:{top:-64}
 			});
 	});
 	
