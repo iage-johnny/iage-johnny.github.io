@@ -30,7 +30,7 @@ header .navbar-inverse {
 header #nav-panel {
 	padding-right : 0px;
 }
-header .nav-brand,
+header .navbar-brand,
 header .navbar-nav li a {
 	height : 64px;
 	line-height : 64px;
