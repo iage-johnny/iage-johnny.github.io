@@ -43,9 +43,9 @@
 				</div>
 			</div>
 		</div>
-		<div id="map-canvas" style="height:540px;"></div>
-		<div style="position:absolute;display:block;top:481px;width:100%;" id="address">
-				<div style="margin:0px auto;width:360px;background-color:#fa5022;z-index:2;text-align:center;padding-top:20px;"><h2 style="margin:0px;">Adelaide</h2><br><p>242 - 244 Franklin St, SA 5000 Australia</p><br></div>		
+		<div id="map-canvas"></div>
+		<div id="address">
+				<div><h2>Adelaide</h2><br><p>242 - 244 Franklin St, SA 5000 Australia</p><br></div>		
 		</div>
 
 		</header>
@@ -125,9 +125,9 @@
 					$(window).ready(function(){
 						$(window).bind('scroll',function(){
 							if($('.navbar').hasClass('navbar-fixed-top')) {
-								$('#address').css('top','417px');
+								$('#address').css('top','517px');
 							} else{
-								$('#address').css('top','481px');
+								$('#address').css('top','581px');
 							}
 						});
 				

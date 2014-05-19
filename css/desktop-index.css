@@ -39,6 +39,7 @@ header .navbar-nav li a {
 	height : 64px;
 	line-height : 64px;
 	font-family : 'HELVETICANEUELTPRO-BDCN';
+	font-size : 17px;
 }
 header .navbar-nav li.last a {
 	padding-right : 0px;

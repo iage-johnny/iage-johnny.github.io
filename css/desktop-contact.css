@@ -58,7 +58,26 @@ header ul.navbar-nav {
 
 
 /* content setting */
-
+#map-canvas {
+	height : 640px;
+}
+#address {
+	position : absolute;
+	display : block;
+	top : 581px;
+	width : 100%;
+}
+#address div {
+	margin:0px auto;
+	width : 360px;
+	background-color : #fa5022;
+	z-index : 2;
+	text-align : center;
+	padding-top : 20px;
+}
+#address div h2 {
+	margin:0px;
+}
 #content {
 	width : 50%;
 	margin : 0px auto;
