@@ -38,6 +38,7 @@ header .navbar-brand,
 header .navbar-nav li a {
 	height : 64px;
 	line-height : 64px;
+	padding : 15px 10px 15px 10px;
 	font-family : 'HELVETICANEUELTPRO-BDCN';
 	font-size : 17px;
 }
@@ -78,7 +79,9 @@ header .carousel-inner {
 }
 #content .title {
 	width : 100%;
-	min-height : 194px;
+	min-height : 184px;
+	padding : 56px 0px 0px 0px;
+	line-height : 100%;
 }
 #content .para {
 	padding-top : 64px;
@@ -89,22 +92,28 @@ header .carousel-inner {
 	font-family : 'HELVETICANEUELTPRO-BDCN';
 	font-size : 83px;
 	text-align : center;
-	margin-top : 64px;
+	margin-top : 0px;
+	margin-bottom : 0px;
 	line-height : 100%;
+}
+#content h2.detail {
+	margin-top : -10px;
+	line-height : 73px;
 }
 #content h3 {
 
 	font-family : 'HELVETICANEUELTPRO-BDCN';
+	font-size : 30px;
 	text-align : center;
+	margin-top : 0px;
 }
-
 #content article {
 	width : 100%;
 }
 
 #content article p {
 	font-family: Arial;
-	font-size : 17px;
+	font-size : 19px;
 	line-height : 100%;
 	width : 50%;
 	min-width : 700px;
