@@ -53,10 +53,8 @@ header .description p {
 	font-size : 1.2em;
 	text-align : center;
 }
-#content section .para {
-	padding-left : 2em;
-	padding-right : 2em;
-	padding-bottom : 2em;
+#content section p {
+	text-align : center;
 }
 #content section .subsection a {
 	display : inline-block;

@@ -57,6 +57,7 @@
 	
 	$(window).ready(function(){
 		set_pic_size();
+		/*
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
 				$('.navbar').addClass('navbar-fixed-top');
@@ -66,6 +67,7 @@
 				$('#content').css('margin-top','0px');
 			}
 		});
+		*/
 		$(window).bind('resize',function(){
 			set_pic_size();
 		});		
