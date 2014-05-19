@@ -28,13 +28,14 @@ header .navbar-inverse {
 	font-size : 1.6em;
 	text-align : center;
 	margin-top : 0px; 
-	padding-top : 5px;
+	padding-top : 10px;
 }
 #content section h3 {
 	font-family : 'Arialbd';
 	font-size : 1.2em;
 	text-align : center;
 	margin-bottom : 0px;
+	margin-top : 10px;
 }
 #content section .para {
 	padding-left : 2em;

@@ -54,6 +54,10 @@
 	}
 
 	set_pic_size();
+
+	$(document).ready(function(){
+		set_pic_size();
+	});
 	
 	$(window).ready(function(){
 		set_pic_size();
