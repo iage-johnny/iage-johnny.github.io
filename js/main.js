@@ -55,11 +55,8 @@
 
 	set_pic_size();
 
-	$(document).ready(function(){
-		set_pic_size();
-	});
 	
-	$(window).ready(function(){
+	$(document).ready(function(){
 		set_pic_size();
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
