@@ -45,6 +45,9 @@ header .navbar-nav li a {
 header .navbar-nav li.last a {
 	padding-right : 0px;
 }
+header .navbar-nav li a.active {
+	color : #fff;
+}
 header .navbar-fixed-top {
 	margin-bottom : 0px;
 	border : 0px;
@@ -84,7 +87,7 @@ header .carousel-inner {
 	line-height : 100%;
 }
 #content .para {
-	padding-top : 56px;
+	padding-top : 40px;
 	min-height : 328px;
 }
 #content h2 {
@@ -113,8 +116,8 @@ header .carousel-inner {
 
 #content article p {
 	font-family: Arial;
-	font-size : 19px;
-	line-height : 100%;
+	font-size : 20px;
+	line-height : 120%;
 	width : 50%;
 	min-width : 700px;
 	margin : 0px auto;
@@ -145,6 +148,10 @@ header .carousel-inner {
 #ourpeople  .staffname {
 	text-align : center;
 }
+#ourpeople .item .staffimg img {
+	margin : 10px auto;
+}
+
 #ourpeople .jobtitle {
 	text-align : center;
 }

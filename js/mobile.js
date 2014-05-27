@@ -42,7 +42,7 @@
 			});
 		});
 	};
-
+	/*
 	$.fn.arrowUpAndDown = function() {
 		return this.each(function(){
 			var $icon = $(this).children('span');
@@ -54,12 +54,56 @@
 
 		});
 	};
+	*/
+	$.fn.arrowUpAndDown = function() {
+		return this.each(function(){
+			var $icon = $(this).children('img');
+			$.each($icon, function(k, v){
+				var src = ($(v).attr('src') === 'img/arrowup') ? 'img/arrowdown' : 'img/arrowup';
+				$(v).attr('src',src);
 
+			});
+		});
+	}
 	$("a.arrow").on('click',function(){
 		var arrow = $(this);
 		arrow.arrowUpAndDown()
 		.parent().parent().siblings('p').slideToggle();
 	});
+	/*
+	
+	for(var i = 1; i < 7; i++) {
+		var item = document.getElementById('item'+i);
+		console.log('item'+i);
+		var element = Hammer(item)
+			.on('swipeleft', function(event) {
+				$('.carousel').carousel('next');
+			
+			});
+		Hammer(item).on('swiperight',function(event){
+				$('.carousel').carousel('prev');
+			});
+	}
+	*/
+	/*
+	var item = document.getElementById('staffpanel');
+	var element = Hammer(item)
+		.on('swipeleft', function(event) {
+			$('.carousel').carousel('next');
+			
+		});
+	Hammer(item).on('swiperight',function(event){
+			$('.carousel').carousel('prev');
+		});
+	*/
+	if ($('.carousel').length){
+        	$(".carousel").swiperight(function() {
+           		$(".carousel").carousel('prev');
+        	});
+        	$(".carousel").swipeleft(function() {
+            		$(".carousel").carousel('next');
+        	});
+    	}
 	
 
 })(jQuery);

@@ -23,6 +23,15 @@ header .navbar-inverse {
 #content {
 	padding : 0px 0px 0px 0px;	
 }
+#content .title {
+	padding-bottom : 10px;
+}
+#content .subtitle {
+	margin-top : -5px;
+}
+#content .subtitle .arrowup {
+	display : none;
+}
 #content section h2 {
 	font-family : 'Arialbd';
 	font-size : 1.6em;
@@ -32,15 +41,13 @@ header .navbar-inverse {
 }
 #content section h3 {
 	font-family : 'Arialbd';
-	font-size : 1.2em;
+	font-size : 1em;
 	text-align : center;
 	margin-bottom : 0px;
 	margin-top : 10px;
 }
 #content section .para {
-	padding-left : 2em;
-	padding-right : 2em;
-	padding-bottom : 2em;
+	padding : 2em;
 }
 /* Carsouel Setting*/
 #ourpeople .item {
@@ -51,6 +58,9 @@ header .navbar-inverse {
 }
 #ourpeople .item p {
 	text-align : center;
+}
+#ourpeople .item .staffimg img {
+	margin : 10px auto;
 }
 
 .arrow {
