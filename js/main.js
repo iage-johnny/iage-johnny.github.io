@@ -11,12 +11,9 @@
 	//home page welcome pic and nav bar setting
 	var navbar_height = $('.navbar').height();
 	
-	var welpicheight = $(window).height() - 64;
-	var welpicwidth = $(window).width();
-
 	function set_pic_size() {
-		welpicheight = $(window).height() - 64;
-		welpicwidth = $(window).width();
+		var welpicheight = $(window).height() - 64;
+		var welpicwidth = $(window).width();
 
 		if(welpicheight > welpicwidth) {
 			welpicheight = welpicwidth*9/16;
