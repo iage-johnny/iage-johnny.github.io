@@ -24,10 +24,15 @@ header .navbar-inverse {
 	padding : 0px 0px 0px 0px;	
 }
 #content .title {
-	padding-bottom : 10px;
+	padding-bottom : 4px;
 }
 #content .subtitle {
 	margin-top : -5px;
+}
+.arrow {
+	position : absolute;
+	left : 92%;
+	padding-top : 3.6px;
 }
 #content .subtitle .arrowup {
 	display : none;
@@ -37,7 +42,7 @@ header .navbar-inverse {
 	font-size : 1.6em;
 	text-align : center;
 	margin-top : 0px; 
-	padding-top : 10px;
+	padding-top : 12px;
 }
 #content section h3 {
 	font-family : 'Arialbd';
@@ -63,9 +68,7 @@ header .navbar-inverse {
 	margin : 10px auto;
 }
 
-.arrow {
-	float : right;
-}
+
 
 /* Footer Setting */
 footer {
