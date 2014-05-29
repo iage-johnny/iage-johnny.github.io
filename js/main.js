@@ -8,37 +8,35 @@
 	//element cache
 	var root = $('html, body');
 
+	//home page welcome pic and nav bar setting
+	var navbar_height = $('.navbar').height();
 	
-	$(document).ready(function(){
-		//home page welcome pic and nav bar setting
-		var navbar_height = $('.navbar').height();
-	
-		var welpicheight = $(window).height() - 64;
-		var welpicwidth = $(window).width();
+	var welpicheight = $(window).height() - 64;
+	var welpicwidth = $(window).width();
 
-		function set_pic_size() {
-			welpicheight = $(window).height() - 64;
-			welpicwidth = $(window).width();
+	function set_pic_size() {
+		welpicheight = $(window).height() - 64;
+		welpicwidth = $(window).width();
 
-			if(welpicheight > welpicwidth) {
-				welpicheight = welpicwidth*9/16;
-			}
+		if(welpicheight > welpicwidth) {
+			welpicheight = welpicwidth*9/16;
+		}
 
 		
-			$('.welcomepic').attr('style','height:'+welpicheight+'px;width:'+welpicwidth+'px;');
-			$('.welcomepic').css('background-image','url("img/homepagewelcomenew.jpg")');
-			$('.welcomepic').css('background-size','100% 100%');
+		$('.welcomepic').attr('style','height:'+welpicheight+'px;width:'+welpicwidth+'px;');
+		$('.welcomepic').css('background-image','url("img/homepagewelcomenew.jpg")');
+		$('.welcomepic').css('background-size','100% 100%');
 		
 		/*
 		var width_img_d = 992;
 		var height_img_d = 352;
 		*/
 		
-			//var width_img_d = $('#welcomeMessage .img-responsive').width();
-			var height_img_d = $('.welcomepic .img-responsive').height();		
+		//var width_img_d = $('#welcomeMessage .img-responsive').width();
+		var height_img_d = $('.welcomepic .img-responsive').height();		
 
 		//var left_move = ( welpicwidth - width_img_d ) / 2;
-			var top_move = (welpicheight - height_img_d)/2
+		var top_move = (welpicheight - height_img_d)/2
 		/*
 		$('#welcomeMessage').height(welpicheight/3);
 		$('#welcomeMessage').width(welpicwidth/2);
@@ -48,10 +46,11 @@
 		$('#welcomeMessage').css('top',top_move+'px');
 		*/
 		
-			$('.welcomepic .container').css('padding-top',top_move);			
+		$('.welcomepic .container').css('padding-top',top_move);			
 
-		}
+	}
 
+	$(document).ready(function(){
 		set_pic_size();
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
