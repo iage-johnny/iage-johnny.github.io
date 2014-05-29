@@ -25,7 +25,7 @@
 		$('.welcomepic').css('background-image','url("img/homepagewelcomenew.jpg")');
 		$('.welcomepic').css('background-size','100% 100%');
 		
-		var height_img_d = $('.welcomepic .img-responsive').height();		
+		var height_img_d = $('#welcome_l').height();		
 
 		var top_move = (welpicheight - height_img_d)/2
 		
@@ -53,8 +53,6 @@
 
 	//logo setting
 	$('#logo img').height(40).width(218*40/75);
-	//$('#logo').height(64);
-	//$('#logo').width(146);
 	$('#logo').css('padding','5px 15px 5px 15px');
 
 	
@@ -65,13 +63,6 @@
 		var dest = 'section'+this.getAttribute('data-dest');
 		var offset = 0 - $('.navbar').height();
 		console.log(offset);
-		/*
-		if($('#navbar').hasClass('navbar-fixed-top')) {
-			offset = -50;
-		} else {
-			offset = 0;
-		}
-		*/
 		$.scrollTo($(dest)
 			,800
 			,{queue:true,
