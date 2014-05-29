@@ -29,7 +29,7 @@
 
 		var top_move = Math.floor((welpicheight - height_img_d) / 2);
 		
-		$('#welcomeMessage').css('padding-top',top_move);			
+		$('#welcomeMessage').css('padding-top',top_move+'px');			
 
 	}
 	
