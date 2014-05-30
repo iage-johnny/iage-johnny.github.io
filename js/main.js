@@ -29,7 +29,6 @@
 		setTimeout(function(){}
 		, 500);
 		height_img_d = $('#welcome_l').height();
-		alert(height_img_d);	
 		var top_move = Math.floor((welpicheight - height_img_d) / 2);
 		$('#welcomeMessage').css('padding-top',top_move+'px');		
 	}
@@ -37,6 +36,7 @@
 	
 
 	$(document).ready(function(){
+		setTimeout(function(){}, 500);
 		set_pic_size();
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
