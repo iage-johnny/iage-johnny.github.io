@@ -36,7 +36,7 @@
 	
 
 	$(document).ready(function(){
-		setTimeout(function(){set_pic_size();},1000);
+		setTimeout(function(){set_pic_size();},500);
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
 				$('.navbar').addClass('navbar-fixed-top');
