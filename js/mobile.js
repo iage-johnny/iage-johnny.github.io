@@ -59,7 +59,7 @@
 		return this.each(function(){
 			var $icon = $(this).children('img');
 			$.each($icon, function(k, v){
-				var src = ($(v).attr('src') === 'img/arrowup.png') ? 'img/arrowdown.png' : 'img/arrowup.png';
+				var src = ($(v).attr('src') === 'img/icon-up-arrow.png') ? 'img/icon-down-arrow.png' : 'img/icon-up-arrow.png';
 				$(v).attr('src',src);
 
 			});

@@ -28,7 +28,7 @@ header .navbar-inverse {
 .arrow {
 	position : absolute;
 	left : 92%;
-	padding-top : 3.9px;
+	padding-top : 6px;
 }
 #content .subtitle .arrowup {
 	display : none;
