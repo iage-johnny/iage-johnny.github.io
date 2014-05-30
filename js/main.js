@@ -29,6 +29,9 @@
 		setTimeout(function(){}
 		, 500);
 		height_img_d = $('#welcome_l').height();
+		if(height_img_d === 0) {
+			height_img_d = Math.floor(354*(welpicwidth-30)/992);
+		}
 		var top_move = Math.floor((welpicheight - height_img_d) / 2);
 		$('#welcomeMessage').css('padding-top',top_move+'px');		
 	}
