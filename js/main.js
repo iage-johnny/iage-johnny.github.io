@@ -17,7 +17,7 @@
 		var welpicwidth = $(window).width();
 
 		if(welpicheight > welpicwidth) {
-			welpicheight = welpicwidth*9/16;
+			welpicheight = Math.floor(welpicwidth*9/16);
 		}
 
 			
@@ -36,7 +36,7 @@
 	
 
 	$(document).ready(function(){
-		set_pic_size();
+		setTimeout(function(){set_pic_size();},1000);
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
 				$('.navbar').addClass('navbar-fixed-top');
