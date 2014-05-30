@@ -29,14 +29,14 @@
 
 		var top_move = Math.floor(($('.welcomepic').height() - height_img_d) / 2);
 		
-		$('#welcomeMessage').css('padding-top',top_move+'px');			
+		setTimeout(function(){$('#welcomeMessage').css('padding-top',top_move+'px');}, 500);			
 
 	}
 	
 	
 
 	$(document).ready(function(){
-		setTimeout(function(){set_pic_size();},500);
+		set_pic_size();
 		$(window).bind('scroll',function(){
 			if($(window).scrollTop() > $('.welcomepic').height()) {
 				$('.navbar').addClass('navbar-fixed-top');
