@@ -29,7 +29,7 @@
 		setTimeout(function(){}
 		, 500);
 		height_img_d = $('#welcome_l').height();	
-		var top_move = Math.floor(($('.welcomepic').height() - height_img_d) / 2);
+		var top_move = Math.floor((welpicheight - height_img_d) / 2);
 		$('#welcomeMessage').css('padding-top',top_move+'px');		
 	}
 	
