@@ -25,14 +25,12 @@
 		$('.welcomepic').css('background-image','url("img/homepagewelcomenew.jpg")');
 		$('.welcomepic').css('background-size','100% 100%');
 		
-			
-		setTimeout(function(){
-			var height_img_d = $('#welcome_l').height();		
-			var top_move = Math.floor(($('.welcomepic').height() - height_img_d) / 2);
-			$('#welcomeMessage').css('padding-top',top_move+'px');
-		}
-		, 500);			
-
+		var height_img_d;
+		setTimeout(function(){}
+		, 500);
+		height_img_d = $('#welcome_l').height();	
+		var top_move = Math.floor(($('.welcomepic').height() - height_img_d) / 2);
+		$('#welcomeMessage').css('padding-top',top_move+'px');		
 	}
 	
 	
