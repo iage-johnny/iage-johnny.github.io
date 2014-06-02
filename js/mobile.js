@@ -66,7 +66,7 @@
 		});
 	}
 	$(".title").on('click',function(){
-		var arrow = $('a.arrow');
+		var arrow = $(this).children('a.arrow');
 		arrow.arrowUpAndDown()
 		.parent().parent().siblings('p').slideToggle();
 	});
