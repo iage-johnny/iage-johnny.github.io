@@ -90,9 +90,11 @@ header ul.navbar-nav {
 }
 #content section article h2 {
 	text-align : center;
+	font-family : 'HELVETICANEUELTPRO-BDCN';
 }
 #content section article h3 {
 	text-align : center;
+	font-family : 'HELVETICANEUELTPRO-BDCN';
 }
 #content section p {
 	text-align : center;
