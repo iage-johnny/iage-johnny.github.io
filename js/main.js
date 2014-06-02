@@ -74,6 +74,11 @@
 				offset:{top:-64}
 			});
 	});
+
+	//footer setting
+	function footer_setting() {
+		
+	}
 	
 
 	//gallery setting desktop
