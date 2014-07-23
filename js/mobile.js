@@ -68,7 +68,7 @@
 	$(".title").on('click',function(){
 		var arrow = $(this).find('a.arrow');
 		arrow.arrowUpAndDown()
-		.parent().parent().siblings('p').slideToggle();
+		.parent().parent().siblings('div').slideToggle();
 	});
 	/*
 	
