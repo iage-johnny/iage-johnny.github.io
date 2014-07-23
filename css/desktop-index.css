@@ -86,10 +86,6 @@ header .carousel-inner {
 	padding : 56px 0px 0px 0px;
 	line-height : 100%;
 }
-#content .para {
-	padding-top : 40px;
-	min-height : 328px;
-}
 #content h2 {
 
 	font-family : 'HELVETICANEUELTPRO-BDCN';
@@ -113,8 +109,9 @@ header .carousel-inner {
 #content article {
 	width : 100%;
 }
-
-#content article p {
+#content .para {
+	padding-top : 40px;
+	min-height : 328px;
 	font-family: Arial;
 	font-size : 20px;
 	line-height : 120%;
@@ -123,7 +120,10 @@ header .carousel-inner {
 	margin : 0px auto;
 	margin-bottom : 40px;
 }
-
+#content .para h4 {
+	font-family: 'HELVETICANEUELTPRO-BDCN';
+	font-size: 25px;
+}
 /* carousel/our staff setting */
 #ourpeople {
 	width : 100%;
