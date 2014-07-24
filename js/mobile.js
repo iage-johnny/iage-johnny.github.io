@@ -65,10 +65,10 @@
 			});
 		});
 	}
-	$(".title").on('click',function(){
+	$(".title.mobile").on('click',function(){
 		var arrow = $(this).find('a.arrow');
 		arrow.arrowUpAndDown()
-		.parent().parent().siblings('div').slideToggle();
+		.parent().parent().siblings('div.para').slideToggle();
 	});
 	/*
 	

@@ -114,16 +114,16 @@ header .carousel-inner {
 #content .para {
 	padding-top : 40px;
 	min-height : 328px;
-	font-size : 20px;
-	line-height : 120%;
-	width : 50%;
-	min-width : 700px;
+	font-size : 17px;
+	line-height : 25.5px;
+	max-width: 640px;
 	margin : 0px auto;
 	margin-bottom : 40px;
 }
 #content .para h4 {
 	font-family: 'HELVETICANEUELTPRO-BDCN';
 	font-size: 25px;
+	text-align: center;
 }
 /* carousel/our staff setting */
 #ourpeople {
