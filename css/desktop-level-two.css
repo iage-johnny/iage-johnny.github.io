@@ -1,9 +1,10 @@
 .mobile {
 	display : none;
 }
-
 html, body {
 	height : 100%;
+	font-family: HelveticaNeue-Light, "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
 }
 
 /* jquery mobile css fix */
@@ -98,6 +99,11 @@ header .description p {
 }
 #content section .subsection h3 {
 	text-align : center;
+}
+#content section .subsection h4 {
+	text-align : center;
+	margin-top : 0px;
+	font-family :  'HELVETICANEUELTPRO-BDCN';
 }
 #content section .subsection a {
 	display : inline-block;
