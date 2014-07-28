@@ -94,17 +94,20 @@ header .description p {
 	text-align : center;
 	line-height : 150%;
 	border-bottom : 2px solid;
+	font-weight: 500;
 }
 #content section .subsection {
 	margin-bottom : 40px;
 }
 #content section .subsection h3 {
 	text-align : center;
+	font-weight: 500;
 }
 #content section .subsection h4 {
 	text-align : center;
 	margin-top : 0px;
 	font-family :  'RockwellBold';
+	font-weight: 500;
 }
 #content section .subsection a.readmore {
 	display : inline-block;
