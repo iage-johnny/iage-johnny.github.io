@@ -5,6 +5,7 @@ html, body {
 	height : 100%;
 	font-family: HelveticaNeue-Light, "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
+	font-size: 16px;
 }
 
 /* jquery mobile css fix */
@@ -67,17 +68,17 @@ header .description {
 header .description h2 {
 	text-align : center;
 	margin-top : 0px;
-	font-family :  'HELVETICANEUELTPRO-BDCN';
+	font-family :  'RockwellBold';
 	font-size : 83px;
 }
 header .description h3 {
 	text-align : center;
 	margin-top : 0px;
-	font-family :  'HELVETICANEUELTPRO-BDCN';
+	font-family :  'RockwellBold';
 	font-size : 24px;
 }
 header .description p {
-	width : 50%;
+	max-width: 640px;
 	margin : 0px auto;
 }
 
@@ -103,7 +104,7 @@ header .description p {
 #content section .subsection h4 {
 	text-align : center;
 	margin-top : 0px;
-	font-family :  'HELVETICANEUELTPRO-BDCN';
+	font-family :  'RockwellBold';
 }
 #content section .subsection a.readmore {
 	display : inline-block;
