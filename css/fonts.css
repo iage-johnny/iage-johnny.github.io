@@ -11,3 +11,13 @@
 	src: url(../fonts/HELVETICANEUELTPRO-BDCN.OTF) format('OTF'),
 	     url(../fonts/HELVETICANEUELTPRO-BDCN.woff) format('woff');
 }
+
+@font-face {
+  font-family: RockwellBold;
+  font-style: normal;
+  font-weight: normal;
+  src: url(../fonts/rockb.eot#iefix) format('embedded-opentype'), 
+  	   url(../fonts/rockb.woff) format('woff'), 
+  	   url(../fonts/rockb.ttf) format('truetype'), 
+  	   url(../fonts/rockb.svg#RockwellBold) format('svg');
+}
