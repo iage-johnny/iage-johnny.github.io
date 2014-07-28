@@ -70,12 +70,14 @@ header .description h2 {
 	margin-top : 0px;
 	font-family :  'RockwellBold';
 	font-size : 83px;
+	font-weight: 500;
 }
 header .description h3 {
 	text-align : center;
 	margin-top : 0px;
 	font-family :  'RockwellBold';
 	font-size : 24px;
+	font-weight: 500;
 }
 header .description p {
 	max-width: 640px;
