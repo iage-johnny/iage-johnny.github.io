@@ -34,14 +34,14 @@ header .navbar-inverse {
 	display : none;
 }
 #content section h2 {
-	font-family : 'Arialbd';
+	font-family : 'RockwellBold';
 	font-size : 1.6em;
 	text-align : center;
 	margin-top : 0px; 
 	padding-top : 12px;
 }
 #content section h3 {
-	font-family : 'Arialbd';
+	font-family : 'RockwellBold';
 	font-size : 1em;
 	text-align : center;
 	margin-bottom : 0px;
