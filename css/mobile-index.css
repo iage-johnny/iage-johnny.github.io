@@ -50,6 +50,10 @@ header .navbar-inverse {
 #content section .para {
 	padding : 2em;
 }
+#content .para h4 {
+	font-family: 'RockwellBold';
+	text-align: center;
+}
 /* Carsouel Setting*/
 #ourpeople .item {
 	margin : 0px auto;
