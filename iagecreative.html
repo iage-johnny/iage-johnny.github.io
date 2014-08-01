@@ -55,14 +55,13 @@
 					<br><br>
 					No matter what size of your business is, I Age Creative has an in-house team who give out 100% high proficient performance. We understand the dynamics of business and we are aim to generate market growth via a variety of marketing strategies. Our dedicating team will help you reach your sales and marketing goals. We have experiences in budget allocation, growth monitoring, PR development and event management. We guarantee our areas of expertise will suit any of your requests.
 				</p>
-				<h3 style="padding-bottom:40px;margin:50px auto;width:50%;" class="desktop"><img src="img/logo003.png" class="img-responsive" alt="Responsive image"></h3>
 				<div style="padding-bottom:40px;margin:50px auto;width:50%;" class="desktop container">
 					<div class="row">
-						<img src="img/marketing_strategy.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%">
-						<img src="img/advertising_distribution.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%;">
-						<img src="img/public.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%;">
-						<img src="img/event.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%">
-						<img src="img/marketing_material.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%;">
+						<a class="innerlink" data-dest="#market"><img src="img/creative01.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%"></a>
+						<a class="innerlink" data-dest="#production"><img src="img/creative02.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%;"></a>
+						<a class="innerlink" data-dest="#adv"><img src="img/creative03.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%;"></a>
+						<a class="innerlink" data-dest="#pub"><img src="img/creative04.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%"></a>
+						<a class="innerlink" data-dest="#event"><img src="img/creative05.png" class="img-responsive " alt="Responsive image" style="float:left;width:20%;"></a>
 					</div>
 				</div>
 				<h3 class="mobile" style="margin : 10px auto;width:90%;"><img src="img/logo003.png" class="img-responsive" alt="Responsive image"></h3>
@@ -83,7 +82,7 @@
 					font-family :  'RockwellBold';					
 				}
 			</style>    
-			<section>
+			<section id="market">
 				<div class="subsection">
 					<h3><img src="img/EVENT MANAGEMENT003.png" width="161" height="161"></h3>
 					<h2 style="border-bottom : 2px solid;line-height:150%;">MARKETING STRATEGY PLANNING</h2>
@@ -101,7 +100,7 @@
 					<div style="display:none;" id="popupwindow"><img src="img/popup_window001.png" width="800" height="800"></div>
 				</div> 
 			</section>
-			<section>
+			<section id="production">
 				<div class="subsection">
 					<h3><img src="img/IAGE PRODUCTION003.png" width="161" height="161"></h3>
 					<h2 style="border-bottom : 2px solid;line-height:150%;">MARKETING MATERIAL PRODUCTION</h2>
@@ -117,7 +116,7 @@
 					<div style="display:none;" id="popupwindow"><img src="img/popup_window001.png" width="800" height="800"></div>
 				</div> 			
 			</section>
-			<section>
+			<section id="adv">
 				<div class="subsection">
 					<h3><img src="img/ADVERTISING DISTRIBUTION003.png" width="161" height="161"></h3>
 					<h2 style="border-bottom : 2px solid;line-height:150%;">ADVERTISING DESTRIBUTION</h2>
@@ -130,7 +129,7 @@
 					<div style="display:none;" id="popupwindow"><img src="img/popup_window001.png" width="800" height="800"></div>
 				</div> 
 			</section>
-			<section>
+			<section id="pub">
 				<div class="subsection">
 					<h3><img src="img/PUBLIC RELATIONSHIP DEVELOPMENT003.png" width="161" height="161"></h3>
 					<h2 style="border-bottom : 2px solid;line-height:150%;">PUBLIC RELATIONSHIP DEVELOPMENT</h2>
@@ -143,7 +142,7 @@
 					<div style="display:none;" id="popupwindow"><img src="img/popup_window001.png" width="800" height="800"></div>
 				</div> 
 			</section>
-			<section>
+			<section id="event">
 				<div class="subsection">
 					<h3><img src="img/MARKETING STRATEGY PLANNING 003.png" width="161" height="161"></h3>					
 					<h2 style="border-bottom : 2px solid;line-height:150%;">EVENT MANAGEMENT</h2>
@@ -171,6 +170,20 @@
 		<script src="js/main_level_two.js" type="text/javascript"></script>
 		<script src="js/popup.js" type="text/javascript"></script>
 		<script src="js/mobile.js" type="text/javascript"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+				$(".innerlink").click(function(evt) {
+		evt.preventDefault();
+		var dest = 'section'+this.getAttribute('data-dest');
+		$.scrollTo($(dest)
+			,800
+			,{queue:true,
+				axis:'y',
+				offset:-74
+			});
+		});
+		});
+		</script>		
 
 	</body>
 </html>
