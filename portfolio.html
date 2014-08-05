@@ -96,6 +96,19 @@
 					font-size: 16px;
 				}
 			}
+
+			@media (max-width : 767px) {
+				.wayne::before {
+					content: "\00a0\00a0\00a0\00a0\00a0Wayne Cao\00a0\00a0\00a0\00a0";
+					font-family: "RockwellBold";
+					font-size: 12px;
+				}
+				.wayne::after {
+					content: "\00a0\00a0\00a0\00a0I AGE CREATIVE";
+					font-family: "HelveticaNeue-Light";
+					font-size: 12px;
+				}
+			}
 			
 
 			
@@ -236,6 +249,8 @@
 		<script src="js/main_level_two.js" type="text/javascript"></script>
 		<script src="js/popup.js" type="text/javascript"></script>
 		<script src="js/mobile.js" type="text/javascript"></script>
+		<script type="text/javascript" src="js/ScrollToTop.js"></script>
+		<noscript>Not seeing a <a href="http://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript>
 		<script type="text/javascript">
 		$(document).ready(function(){
 			$('.staff').width($('.rest:first').width());

@@ -2,6 +2,10 @@
 	display : none;
 }
 
+body {
+	font-family: "HelveticaNeue-Light";
+}
+
 /* jquery mobile css fix */
 .ui-loading .ui-loader { display: block; }
 .ui-loader { display: none; position: absolute; opacity: .85; z-index: 100; left: 50%; width: 200px; margin-left: -130px; margin-top: -35px; padding: 10px 30px; }
@@ -44,12 +48,12 @@ header .description p {
 	margin : 0px auto;
 }
 #content section h2 {
-	font-family : 'Arialbd';
+	font-family : "RockwellBold";
 	font-size : 1.6em;
 	text-align : center; 
 }
 #content section h3 {
-	font-family : 'Arialbd';
+	font-family : "RockwellBold";
 	font-size : 1.2em;
 	text-align : center;
 }
