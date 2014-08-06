@@ -61,6 +61,10 @@ header .navbar-inverse {
 #ourpeople .item p {
 	text-align : center;
 }
+#ourpeople  .staffname {
+	text-align : center;
+	font-family: 'RockwellBold';
+}
 #ourpeople .item .staffimg img {
 	margin : 10px auto;
 }

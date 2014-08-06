@@ -19,6 +19,9 @@ header .navbar {
 header .navbar-inverse {
 	background : rgb(0,0,0);
 }
+header .topPic {
+	padding-top: 50px;
+}
 header .description {
 	padding-bottom : 5px;
 }

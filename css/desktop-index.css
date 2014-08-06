@@ -145,6 +145,7 @@ header .carousel-inner {
 }
 #ourpeople  .staffname {
 	text-align : center;
+	font-family: 'RockwellBold';
 }
 #ourpeople .item .staffimg img {
 	margin : 10px auto;
