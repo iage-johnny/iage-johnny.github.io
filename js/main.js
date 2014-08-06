@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 			
 		$('.welcomepic').attr('style','height:'+welpicheight+'px;width:'+welpicwidth+'px;');
-		$('.welcomepic').css('background-image','url("img/homepagewelcomenew.jpg")');
+		$('.welcomepic').css('background-image','url("img/rundle.jpg")');
 		$('.welcomepic').css('background-size','100% 100%');
 		
 		var height_img_d;

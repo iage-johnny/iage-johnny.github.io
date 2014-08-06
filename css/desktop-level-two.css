@@ -60,6 +60,9 @@ header #top-menu {
 header ul.navbar-nav {
 	float : right;
 }
+header .topPic {
+	padding-top: 64px;
+}
 header .description {
 	padding-top : 50px;
 }
