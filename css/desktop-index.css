@@ -1,6 +1,3 @@
-.mobile {
-	display : none;
-}
 
 html, body {
 	height : auto;
@@ -269,4 +266,8 @@ footer .footer .footer-left {
 
 footer .footer .footer-right {
 	float : right;
+}
+
+.mobile {
+	display : none;
 }

@@ -1,6 +1,3 @@
-.desktop {
-	display : none;
-}
 
 /* Header Setting*/
 header #navbar {
@@ -79,3 +76,6 @@ footer {
 	height : auto;
 }
 
+.desktop {
+	display : none;
+}

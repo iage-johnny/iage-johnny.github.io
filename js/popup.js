@@ -1,6 +1,6 @@
 (function($){
-	$('#popup').bind('click', function(e){
+	$('#iageweekly').bind('click', function(e){
 			e.preventDefault();
-			$('#popupwindow').bPopup();
+			$('#iageweeklywindow').bPopup();
 		});
 })(jQuery);

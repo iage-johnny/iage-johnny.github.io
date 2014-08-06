@@ -1,6 +1,4 @@
-.mobile {
-	display : none;
-}
+
 html, body {
 	height : auto;
 	font-family: HelveticaNeue-Light, "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -207,4 +205,8 @@ footer .footer .footer-left {
 
 footer .footer .footer-right {
 	float : right;
+}
+
+.mobile {
+	display : none;
 }
